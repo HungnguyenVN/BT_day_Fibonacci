@@ -1,13 +1,12 @@
 
-let i = 0;
-let j = 1;
-for(let count = 0; count<20; count++){
-if (count==0){
-        document.write( '0' +'&nbsp');    
-} else {
-        number = i + j;
-        document.write(number + '&nbsp');
-        i = j;
-        j = number;
+let a = 0;
+let b = 1;
+html = "";
+let number;
+for(let i = 1; i<=20; i++){
+        html += a+", ";
+        number = a + b;
+        a = b;
+        b = number;
 }
-}
+document.write(html);
